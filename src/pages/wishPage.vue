@@ -156,7 +156,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wishPage_all {
   height: auto;
   // background-color: antiquewhite;

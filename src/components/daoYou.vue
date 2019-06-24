@@ -58,7 +58,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .aboutTravel{
   height: 550px;
   width: 100%;

@@ -13,9 +13,9 @@
             <el-menu-item index="1" @click="toYinDao()">引导页</el-menu-item>
             <el-menu-item index="2" @click="toShouYe()">首页</el-menu-item>
             <el-submenu index="3">
-              <template slot="title" @click="toShouYe()">行程</template>
-              <el-menu-item index="2-1" @click="toHotel()">我的行程</el-menu-item>
-              <el-menu-item index="2-2" @click="toAddPlan()">添加行程</el-menu-item>
+              <template slot="title" @click="toShouYe()">功能</template>
+              <el-menu-item index="2-1" @click="toHotel()">客服</el-menu-item>
+              <el-menu-item index="2-2" @click="toAddPlan()">讨论房间</el-menu-item>
               <el-menu-item index="2-3" @click="toWishPage()">心愿单</el-menu-item>
               <!-- <el-submenu index="2-4">
                 <template slot="title" @click="toShouYe()">攻略</template>
@@ -204,7 +204,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .allBar {
   width: 100%;
   position: relative;

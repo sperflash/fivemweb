@@ -203,6 +203,7 @@
 <script>
 import navBar from "@/components/navBar";
 import bottomAnother from "@/components/bottomAnother";
+import { signUpApi, getThoughts } from "@/api/SignUp.js";
 
 export default {
   components: {
@@ -212,14 +213,31 @@ export default {
   // name: "HelloWorld",
   data() {
     return {
-
       restaurants: [],
       state: "",
       timeout: null,
-      activeName: "first"
+      activeName: "first",
+      userName: "www",
+      phoneNumber: "15650582160",
+      password: "ai1522573",
+      userId: 1,
     };
   },
   methods: {
+    getThought() {
+      console.log("jjjj");
+      getThoughts(this.userId).then(res => {
+        console.log("jjjjxdzgDFjj");
+        console.log(res);
+      });
+    },
+    postSignUp() {
+      console.log("jjjj");
+      signUpApi(this.userName, this.phoneNumber, this.password).then(res => {
+        console.log("jjjjxdzgDFjj");
+        console.log(res);
+      });
+    },
     toSignUp() {
       this.$router.push("SignUp");
     },
@@ -260,19 +278,21 @@ export default {
       console.log(item);
     },
     reloadPage() {
-      location=location
+      location = location;
     }
   },
   mounted() {
     this.restaurants = this.loadAll();
   },
   created() {
+    this.getThought();
+    this.postSignUp();
     this.reloadPage();
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .el-row {
   margin-bottom: 20px;
   &:last-child {

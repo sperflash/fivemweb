@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
- <style lang="scss">
+ <style lang="scss" scoped>
 .mc_pic{
   position:relative;
   width:100%;

@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .el-header, .el-footer {
     background-color: #B3C0D1;
     color: #333;

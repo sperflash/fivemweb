@@ -181,7 +181,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .edit_all {
   height: 700px;
   display: flex;
@@ -301,7 +301,7 @@ export default {
   }
   .yaoContent{
     height: 300px;
-    background-color: red;
+    // background-color: red;
     margin-top: 40px;
     font-size: 15px;
     font-weight: 800;

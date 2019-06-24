@@ -738,7 +738,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="scss" scoped>
 .person_all {
   height: 2000px;
   .center_top {

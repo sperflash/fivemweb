@@ -258,7 +258,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .shouye_all {
   .top_part {
     height: auto;

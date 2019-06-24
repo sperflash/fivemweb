@@ -88,7 +88,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   margin-top: -150px;
   background: #72b4ee;

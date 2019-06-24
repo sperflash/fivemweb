@@ -30,6 +30,7 @@
 import { getHotel } from '@/api/hotel.js'
 import navBar from '@/components/navBar';
 
+
 export default {
   components: {
     navBar
@@ -126,7 +127,7 @@ export default {
   }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="scss" scoped>
 .Sign_all{
   // background-color: blueviolet;
   height: 600px;
